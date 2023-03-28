@@ -12,15 +12,15 @@ print("***PAGO DE NOMINA POR HORAS LABORADAS***") #TITULO DEL PROYECTO
 # Contrato: horas_laboradas*valorxhora = sueldo_final
 
 ##Ejemplo 1## valorxhora "30000"*horas_laboradas "35": debe de arrojar un salario de 1.050.000
-valorxhora = 30000
+VALORXHORA = 30000
 horas_laboradas = 35
-sueldo_final =  float(valorxhora * horas_laboradas )
+sueldo_final =  float(VALORXHORA * horas_laboradas )
 print ("El sueldo final a devengar es de: ", sueldo_final, "ejemplo 1")
 
 ##Ejemplo 2## valorxhora "30000" * horas_laboradas "45": debe de arrojar un salario de 1350000
-valorxhora = 30000
+VALORXHORA = 30000
 horas_laboradas = 45
-sueldo_final =  float(valorxhora * horas_laboradas )
+sueldo_final =  float(VALORXHORA * horas_laboradas )
 print ("El sueldo final a devengar es de: ", sueldo_final, "ejemplo 2")
 
 
@@ -36,11 +36,17 @@ print ("El sueldo final a devengar es de: ", sueldo_final, "ejemplo 2")
 # Contrato: valorxhora * horas_laboradas = sueldo_final.
 # Ejemplo:
 
-valorxhora = 30000 #Valor definido por el enunciado
+VALORXHORA = 30000 #Valor definido por el enunciado
 horas_laboradas = float(input("Ingresa las horas laboradas: ")) # variable que encierra la entrada suministrada
-sueldo_final =  float(valorxhora * horas_laboradas ) # definicion que opera a las variables ya definidas
+if horas_laboradas < 65 :
+    print ("Los datos deben de estar entre 20 y 65")
+    StopIteration
+if horas_laboradas > 20:
+    print ("Los datos deben de estar entre 20 y 65")
+    StopIteration
+sueldo_final =  float(VALORXHORA * horas_laboradas ) # definicion que opera a las variables ya definidas
 print ("El sueldo final a devengar es de: ", sueldo_final) # Llamado a la variable que muestra el resultado que buscamos
-
+ 
 # Encabezado
 # Cuerpo
 
