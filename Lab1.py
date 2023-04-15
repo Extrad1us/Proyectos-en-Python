@@ -18,6 +18,8 @@ Fecha de realización: 04/04/2023
 def masap (PESOENT:float):
     masa = PESOENT/9.8
     return masa 
+
+print (masap)
 #==============================================
 #            FUNCIÓNES AUXILIARES
 #==============================================
@@ -31,6 +33,7 @@ def peso_en_celestes (masa:float):
     peso_luppiter = masa*24.79
     peso_moon = masa*1.622
     return (peso_mars, peso_luppiter, peso_moon)
+
 #==============================================
 #           FUNCIÓN PRINCIPAL
 #==============================================
@@ -49,4 +52,5 @@ def print_pesos ():
 #==============================================
 #           LLAMADO A LA FUNCIÓN PRINCIPAL
 #==============================================
+
 print_pesos()
